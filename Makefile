@@ -18,4 +18,4 @@ generate_go:
 
 generate_ts: 
 	yarn
-	protoc --plugin=./greeter_server/node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=./greeter_server/src greeter/greeter.proto
+	protoc --plugin=./greeter_server/node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=./greeter_server/src --proto_path=./greeter greeter.proto
