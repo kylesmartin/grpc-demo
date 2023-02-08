@@ -1,0 +1,22 @@
+{
+  "name": "grpc-demo",
+  "private": true,
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "workspaces": [
+    "greeter_server"
+  ],
+  "scripts": {
+    "serve": "yarn build && node ./greeter_server/dist/index.js",
+    "lint": "tsc",
+    "clean": "tsc -b --clean ./tsconfig.json",
+    "build": "yarn clean && tsc -b ./tsconfig.json"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^4.3.5"
+  },
+  "repository": "https://github.com/kylesmartin/grpc-demo.git",
+  "author": "Kyle Martin <kylesmartin19@gmail.com>",
+  "license": "MIT"
+}

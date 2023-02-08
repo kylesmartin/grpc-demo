@@ -1,0 +1,10 @@
+{
+  "name": "greeter_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ts-proto": "^1.139.0",
+    "tslib": "^2.5.0"
+  }
+}

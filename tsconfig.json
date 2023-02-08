@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig.base.json",
+    "files": [],
+    "include": [],
+    /*
+    The order of the 'references' array matters.
+    If package B depends on package A, it must be listed after package A in the array.
+    */
+    "references": [
+      {
+        "path": "./greeter_server",
+      },
+    ]
+}
