@@ -19,5 +19,8 @@
   },
   "repository": "https://github.com/kylesmartin/grpc-demo.git",
   "author": "Kyle Martin <kylesmartin19@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
