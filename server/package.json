@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "files": [
+    "dist/**/*",
+    "!dist/**/*.test.js"
+  ],
   "dependencies": {
+    "@grpc/grpc-js": "^1.8.8",
     "ts-proto": "^1.139.0",
     "tslib": "^2.5.0"
   }

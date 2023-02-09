@@ -1,0 +1,27 @@
+# /proto/buf.gen.yaml
+version: v1
+plugins:
+  - name: js
+    out: ../server/src
+    opt: 
+      - import_style=commonjs,binary
+    path: ./node_modules/.bin/protoc-gen-js
+  - name: ts_grpc
+    out: ../server/src
+    opt: 
+      - grpc_js
+      - paths=source_relative
+    path: ./node_modules/.bin/grpc_tools_node_protoc_plugin
+  - name: ts
+    out: ../server/src
+    opt:
+      - grpc_js
+      - paths=source_relative
+    path: ./node_modules/.bin/protoc-gen-ts
+  - plugin: go
+    out: ../client/greeter
+    opt: paths=source_relative
+  - plugin: go-grpc
+    out: ../client/greeter
+    opt:
+      - paths=source_relative

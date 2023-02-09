@@ -8,7 +8,7 @@
     */
     "references": [
       {
-        "path": "./greeter_server",
+        "path": "./server",
       },
     ]
 }
